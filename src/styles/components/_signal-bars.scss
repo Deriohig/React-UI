@@ -1,0 +1,20 @@
+
+.signal-bars {
+  display: inline-block;
+  height: $signal-strength-bar-height;
+  width: $signal-strength-bar-width;
+  .bar {
+    background-color: $white;
+    width: 20%;
+    margin-left: 10%;
+    min-height: 20%;
+    display: inline-block;
+
+    &.first-bar  { height: 33.33%; }
+    &.second-bar { height: 66.66%; }
+    &.third-bar  { height: 100%; }
+  }
+  .no-bar{
+    background-color:rgba($white,.2);
+  }
+}
